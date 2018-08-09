@@ -117,21 +117,18 @@ nav a:hover{
 
 /*三宫格部分结束*/
 /*六宫格开始*/
-.list1,.list1{
+.list1,.list1 ul{
     width:100%;
     height:auto;
 }
+.list1 ul{
+    overflow: hidden;
+}
 .list1 ul li{
     float: left;
-    border-bottom:12px solid #fff;
-    border-right:6px solid #fff;
-    border-left:12px solid #fff;
     box-sizing: border-box;
 }
-.list1 ul li:nth-child(2n){
-    border-right: 12px solid #fff;
-    border-left:6px solid #fff;
-}
+
 .list1 h4{
     font-weight: 600;
     text-align: center;
@@ -164,6 +161,131 @@ nav a:hover{
 .three_rings h4,.three_rings h5{
     color: #fff;
 }
+/*底部开始*/
+footer{
+    width: 100%;
+    height:auto;
+    background: #F2F2F2;
+    padding:43px 0 24px;
+    /*box-sizing: border-box;*/
+}
+footer .main{
+    height:100%;
+    margin: 0 auto;
+}
+.bodr{
+    width:100%;
+    overflow: hidden;
+}
+footer .colume{
+    width: 20%;
+    height:auto;
+    float: left;
+}
+footer div ul li:first-child{
+    color:#333333;
+    font-weight: bold;
+}
+footer div li a{
+    font-size: 10px;
+    color:#555555;
+    line-height: 26px;
+}
+.sec-big div{
+    font-size:10px ;
+    color:#888B8E;
+    line-height: 32px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.sec-big div a{
+    font-size:10px ;
+    color:#0073db;
+    line-height: 32px;
+}
+.footer-left div:nth-child(1),.footer-left div:nth-child(2){
+    float: left;
+}
+
+.footer-left div{
+    font-size: 10px;
+    color: #9390ad;
+}
+.footer-left {
+    overflow: hidden;
+    line-height: 30px;
+}
+.footer-right{
+    font-size: 10px;
+    color: #555555;
+    float: right;
+}
+.footer-right div{
+    width: 16px;
+    height:16px;
+    background: url("../img/china.png") no-repeat center;
+    margin-top: 6px;
+    margin-right: 5px;
+    float: left;
+}
+.footer-right a{
+    color:#555555;
+    font-size: 10px;
+}
+.links a{
+    margin: 0 8px ;
+    color:#555555;
+}
+.links{
+    margin-left: 25px;
+}
+.foot,.foot a{
+    color:#959492;
+    font-size: 10px;
+}
+.foot a:hover{
+    text-decoration: underline;
+}
+/*隐藏的第三屏*/
+.small{
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+}
+.row{
+    padding:21px 16px 22px;
+}
+.small li{
+    width: 100%;
+    line-height: 36px;
+    border-bottom: 1px solid #d5d5d5;
+    cursor: pointer;
+    font-size: 10px;
+    color: #333333;
+}
+.row li:after{
+    content: '+';
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -2px;
+    margin-right: 8px;
+}
+.bot-row{
+    margin: 0 auto;
+    padding:0px 16px 22px;
+}
+.bot-row .footer-right{
+    float: none;
+    line-height: 30px;
+}
+.links1{
+    margin: 0;
+}
+.links1 a:first-child{
+    margin-left: 0;
+}
+/*底部结束*/
+/*最大屏*/
 @media screen and (min-width:1024px){
     main{
         width:976px;
@@ -251,6 +373,25 @@ nav a:hover{
     /*6li*/
     .three_rings{
         background: #000 url("../img/three_rings_large.jpg") no-repeat center bottom;
+    }
+    .list1 ul li{
+        border-bottom:12px solid #fff;
+        border-right:6px solid #fff;
+        border-left:12px solid #fff;
+    }
+    .list1 ul li:nth-child(2n){
+        border-right: 12px solid #fff;
+        border-left:6px solid #fff;
+    }
+    /*底部开始*/
+    footer .main{
+        width: 980px;
+    }
+    .big{
+        display: block;
+    }
+    .small{
+        display: none;
     }
 }
 @media screen and (max-width:1024px){
@@ -341,6 +482,25 @@ nav a:hover{
     .three_rings{
         background: #000 url("../img/three_rings_medium.jpg") no-repeat center bottom;
     }
+    .list1 ul li{
+        border-bottom:12px solid #fff;
+        border-right:6px solid #fff;
+        border-left:12px solid #fff;
+    }
+    .list1 ul li:nth-child(2n){
+        border-right: 12px solid #fff;
+        border-left:6px solid #fff;
+    }
+    /*底部开始*/
+    footer .main{
+        padding:26px;
+    }
+    .big{
+        display: block;
+    }
+    .small{
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -420,6 +580,21 @@ nav a:hover{
     /*6li*/
     .three_rings{
         background: #000 url("../img/three_rings_small.jpg") no-repeat center bottom;
+    }
+    .list1 ul li{
+        border:none;
+        border-bottom:12px solid #fff;
+    }
+    .list1 ul li:nth-child(2n){
+        border-right: 0;
+        border-left:0;
+    }
+    /*底部三屏隐藏部分开始*/
+    .big{
+        display: none;
+    }
+    .small{
+        display: block;
     }
 
 
